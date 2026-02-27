@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Sushmitha Gembunathan 
+* **Register Number**: 212224040342
+* **Date of Submission**: 27/02/26
 
 ---
 
@@ -78,13 +78,15 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
-
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. Logged in to the AWS Management Console and navigated to the EC2 Dashboard.
+2. Explored the Elastic Block Store (EBS) section and reviewed available volume types such as General Purpose SSD (gp2/gp3), Provisioned IOPS SSD, Throughput Optimized HDD, and Cold HDD.
+3. Created a new EBS volume by selecting the gp3 type, specifying the required storage size, and choosing the same Availability Zone as the running EC2 instance.
+4. Attached the newly created volume to the running EC2 instance as a secondary device.
+5. Connected to the EC2 instance using SSH and verified the attached disk using the lsblk command.
+6. Formatted the new volume with the ext4 file system, created a mount directory, and mounted the volume to the instance.
+7. Verified the successful mount using the df -h command and created sample files in the mounted directory to store test data.
+8. Rebooted the EC2 instance, reconnected via SSH, and confirmed that the mounted volume and stored data were still available.
+9. Validated that the EBS volume provides persistent storage across instance reboots.
 
 ---
 
@@ -92,19 +94,29 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ### Screenshot 1: EBS Volume Created
 
-(Insert Screenshot Here)
+<img width="1920" height="1200" alt="Screenshot 2026-02-27 211918" src="https://github.com/user-attachments/assets/f92bf0d7-b621-42c0-805f-0b2e6a92178f" />
+
 
 ---
 
 ### Screenshot 2: EBS Volume Attached to EC2
 
-(Insert Screenshot Here)
+<img width="1920" height="1200" alt="Screenshot 2026-02-27 212531" src="https://github.com/user-attachments/assets/62bc597d-2c03-4d8c-af0c-b300963c96ec" />
+
+<img width="1920" height="1200" alt="Screenshot 2026-02-27 213002" src="https://github.com/user-attachments/assets/5a8bc6f8-3db7-4ac1-8dff-4677e0b494f7" />
+
+<img width="1920" height="1200" alt="Screenshot 2026-02-27 212422" src="https://github.com/user-attachments/assets/7cfeab73-2ef5-4a6d-8b3c-cd80d37b8f7e" />
+
 
 ---
 
 ### Screenshot 3: Mounted Volume with Data
 
-(Insert Screenshot Here)
+<img width="1920" height="1200" alt="Screenshot 2026-02-27 213205" src="https://github.com/user-attachments/assets/7c52450b-d6f9-4e91-ad32-395715dd4702" />
+
+<img width="1920" height="1200" alt="Screenshot 2026-02-27 213614" src="https://github.com/user-attachments/assets/cf7ec8ca-a556-49ec-ac6a-b60b6e3e9cef" />
+
+
 
 ---
 
