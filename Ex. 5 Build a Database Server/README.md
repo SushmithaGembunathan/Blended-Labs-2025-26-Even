@@ -95,7 +95,7 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ### Screenshot 1: EC2 Instance for Database Server
 
-![Image](image-name.png)
+![Image](3.png)
 ---
 
 ### Screenshot 2: Database Service Running
